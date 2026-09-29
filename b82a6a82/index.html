@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张三 · 个人主页</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">ZS</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系我</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="切换菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container hero-inner">
+      <p class="hero-greeting">你好，我是</p>
+      <h1 class="hero-name">张三</h1>
+      <p class="hero-title" id="typewriter">全栈开发工程师</p>
+      <p class="hero-desc">
+        热爱编程与技术分享，专注于构建优雅、高效的 Web 应用。
+        我相信代码不仅是工具，更是创造美好体验的方式。
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">查看我的作品</a>
+        <a href="#contact" class="btn btn-outline">联系我</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-placeholder">张</div>
+        </div>
+        <div class="about-text">
+          <p>
+            我是一名拥有 5 年经验的全栈开发工程师，热衷于将想法转化为
+            可用的产品。擅长前端交互设计与后端架构，注重代码质量与用户体验。
+          </p>
+          <p>
+            工作之外，我喜欢阅读技术博客、参与开源社区，并在周末尝试一些新的
+            技术小项目。
+          </p>
+          <ul class="about-facts">
+            <li><strong>位置：</strong>中国 · 上海</li>
+            <li><strong>经验：</strong>5 年全栈开发</li>
+            <li><strong>兴趣：</strong>开源、摄影、咖啡</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">技能</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>前端</h3>
+          <div class="skill-tags">
+            <span>HTML / CSS</span><span>JavaScript</span>
+            <span>TypeScript</span><span>React</span><span>Vue</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>后端</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Python</span>
+            <span>Go</span><span>PostgreSQL</span><span>Redis</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>工具与运维</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>Docker</span>
+            <span>CI/CD</span><span>Linux</span><span>AWS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">精选项目</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-cover cover-1">📊</div>
+          <div class="project-body">
+            <h3>数据可视化平台</h3>
+            <p>基于 React + D3.js 的实时数据仪表盘，支持多数据源接入与自定义图表。</p>
+            <div class="project-tags">
+              <span>React</span><span>D3.js</span><span>WebSocket</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-cover cover-2">📝</div>
+          <div class="project-body">
+            <h3>在线笔记应用</h3>
+            <p>支持 Markdown、多端同步的笔记工具，拥有 1 万+ 用户。</p>
+            <div class="project-tags">
+              <span>Vue 3</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-cover cover-3">🤖</div>
+          <div class="project-body">
+            <h3>智能客服机器人</h3>
+            <p>集成大语言模型的客服系统，自动回答常见问题并转接人工。</p>
+            <div class="project-tags">
+              <span>Python</span><span>FastAPI</span><span>LLM</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <p class="contact-desc">如果你对我的作品感兴趣，或者想聊聊技术，欢迎随时联系！</p>
+      <div class="contact-links">
+        <a href="mailto:hello@example.com" class="contact-item">
+          <span class="contact-icon">✉️</span>hello@example.com
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">🐙</span>GitHub
+        </a>
+        <a href="https://example.com" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">💼</span>LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 张三 · 用 ❤️ 与代码构建</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
